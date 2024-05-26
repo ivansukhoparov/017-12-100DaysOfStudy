@@ -1,0 +1,24 @@
+
+.error {
+    width: 250px;
+    padding: 5px 15px;
+    border: solid 1px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0;
+}
+
+.error__header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.error__button {
+    margin: 0 0 10px 0;
+    width: 254px;
+    padding: 10px;
+}

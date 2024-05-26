@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="add-task-form.css">
+</head>
+<body style="
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+">
+
+<div class="new-task">
+    <div class="new-task__header">
+        <h3 class="new-task__title">Edit task</h3>
+        <button class="button close-button">X</button>
+    </div>
+    <form class="new-task__form task-form">
+        <label  for="company-name"  class="task-form__label">Company Name:</label>
+        <input type="text"  class="task-form__input" list="company-names" id="company-name" name="company-name">
+        <datalist  id="company-names" >
+            <option value="Company 1">
+            <option value="Company 2">
+            <option value="Company 3">
+        </datalist> 
+
+        <label for="project-name"  class="task-form__label">Project Name:</label>
+        <input type="text" class="task-form__input"  id="project-name" name="project-name">
+
+        <label for="budget" class="task-form__label">Budget:</label>
+       <div class="task-form__currency-wrapper">
+           <input type="text" class="task-form__input task-form__input--amount" id="budget" name="budget">
+           <input type="text" class="task-form__input task-form__input--currency"  list="currencyes" id="currency" name="currency" >
+           <datalist  id="currencyes" name="currency">
+               <option value="$">
+               <option value="Rub">
+               <option value="Eur">
+           </datalist>
+       </div>
+        <label for="total-time"  class="task-form__label">Total time:</label>
+        <input type="text" class="task-form__input"  id="total-time" name="total-time">
+        <button class="button task-form__submit">Save</button>
+    </form>
+</div>
+
+
+</body>
+</html>
